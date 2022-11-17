@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 
@@ -16,11 +18,13 @@ public class ServerTest {
     @BeforeEach
     public void setUp() {
         server = new Server();
+        char GBP = '£';
         guest = new Guest("robert", 36, 5.00, 30, false);
         guest2 = new Guest("jayden", 15, 5.00, 100, true);
         guest3 = new Guest("Ellie", 29, 3.79, 100, false);
         guest4 = new Guest("Jade", 25, 18.67, 50, false);
         guest5 = new Guest("Kay", 30, 25.00, 50, false);
+        guest5 = new Guest("Tina",19,34.00,50,false,"GBP");
     }
 
     // TODO: test that guest can only get served if over 18
@@ -79,6 +83,11 @@ public class ServerTest {
     }
 
     // TODO: test that guest can only get served if guest can pay in local currency (add £ char as currency)
+
+    @Test
+
+
+
 
     // EXTENSIONS
 

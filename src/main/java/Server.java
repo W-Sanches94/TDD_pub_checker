@@ -12,6 +12,7 @@ public class Server {
         if(guest.getBan() == false){
             return false;
         }
+        if(guest.getCurrency())
         return true;
     }
 

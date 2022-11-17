@@ -8,13 +8,16 @@ public class Guest {
 
     public boolean ban;
 
+    public char £ ;
 
-    public Guest(String name, int age, double wallet, int sobriety, Boolean ban) {
+
+    public Guest(String name, int age, double wallet, int sobriety, Boolean ban, char currency) {
         this.name = name;
         this.age = age;
         this.wallet = 0;
         this.sobriety = 0;
         this.ban = ban;
+        this.currency = £;
 
     }
 
@@ -56,6 +59,14 @@ public class Guest {
 
     public void SetBan(){
         this.ban = ban;
+    }
+
+    public char getCurrency(){
+        return this.currency;
+    }
+
+    public void setCurrency(){
+        this.currency = currency;
     }
 
 }
