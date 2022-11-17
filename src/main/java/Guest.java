@@ -4,11 +4,14 @@ public class Guest {
     private int age;
     private double wallet;
 
+    private int sobriety;
 
-    public Guest(String name, int age, double wallet) {
+
+    public Guest(String name, int age, double wallet, int sobriety) {
         this.name = name;
         this.age = age;
         this.wallet = 0;
+        this.sobriety = 0;
 
     }
 
@@ -29,7 +32,7 @@ public class Guest {
     }
 
     public double getWallet() {
-        return wallet;
+        return this.wallet;
     }
 
     public void setWallet(){
